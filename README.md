@@ -3,11 +3,9 @@
 ## How to contribute
 
 #### Installing Node JS 
- - [Install Node JS from the official website](https://nodejs.org/en/download/)
- - [Install Node JS using a package manager](https://nodejs.org/en/download/)
- 
+ - [Install Node JS](https://nodejs.dev/learn/how-to-install-nodejs)
+
  #### Cloning the repository
- 
 
     git clone https://github.com/BenMob/csusm-dsc-website.git
 

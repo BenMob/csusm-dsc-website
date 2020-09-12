@@ -16,5 +16,5 @@
     cd csusm-dsc-website/src
     nodemon app.js
   
-  Navigate to [localhost:3000](localhost:3000)
+  Navigate to [localhost:3000](http://localhost:3000/)
 > Written with [StackEdit](https://stackedit.io/).

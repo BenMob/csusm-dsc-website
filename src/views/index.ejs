@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <%- include('./partials/head.ejs') %>
 </head>
-<body>
-    <h1>Home</h1>
+<body class="">
+    <%- include('./partials/navbar.ejs') %>
+    <div id="home" class="container-fluid pt-5 border border-left-0 border-right-0 border-top-0">
+        <div class="home-content row">
+            <div class="col-sm pt-5 text-light google-blue-bg">
+                <div class="intro text-center">
+                    <p class="display-4 text-center">Developer Student Club CSUSM</p>
+                    <p class="text-center lead">
+                        Developer Student Clubs (DSC) aims to impact and empower students through understanding, using, and reflecting about
+                        technology. DSC hosts information sessions, hands-on workshops, and student-community collaborative projects centered
+                        around the latest and greatest in technology, all with the support of Google Developers.
+                    </p>
+                    <div class="row pt-5">
+                        <div class="col-sm">
+                            <code class="hashtag p-2 text-light">#googlestudents</code>&nbsp;&nbsp;
+                        </div>
+                        <div class="col-sm">
+                            <code class="hashtag p-2 text-light">#developerstudentclubs</code>&nbsp;&nbsp;
+                        </div>
+                        <div class="col-sm">
+                            <code class="hashtag p-2 text-light">#growwithgoogle</code>&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <a type="button" class="btn google-yellow-bg m-5" href="https://linktr.ee/dsccsusm">Important Links</a>
+                </div>
+                
+            </div>
+            <!-- ================================ Right Side =====================-->
+            <div class="light-bg col-sm pt-4 fill w3-animate-zoom">
+                <div class="fill" >
+                    <div class="row fill">
+                        <div class="col-sm-12 fill">
+                            <div id="slider" class="carousel slide fill" data-ride="carousel">
+                                <!-- indicator -->
+                        
+                                <!-- wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!--  Slide 0-->
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid" src="images/events/info.jpg" alt="">
+                                        <div class="carousel-caption">
+                                            <p>Developer Student Clubs CSUSM</p> 
+                                        </div>
+                                    </div>
+                                    <!--  Slide 1-->
+                                    <div class="carousel-item" >
+                                        <img class="img-fluid" src="images/events/1.JPG" alt="">
+                                        <div class="carousel-caption">
+                                            <p>Developer Student Clubs</p>
+                                        </div>
+                                    </div>
+                                    <!--  Slide 3-->
+                                    <div class="carousel-item">
+                                        <img class="img-fluid" src="images/events/2.JPG" alt="">
+                                        <div class="carousel-caption">
+                                            <p>Developer Student Clubs</p>
+                                        </div>
+                                    </div>
+                                    <!--  Slide 4-->
+                                    <div class="carousel-item">
+                                        <img class="img-fluid" src="images/events/3.JPG" alt="">
+                                        <div class="carousel-caption">
+                                            <p>Developer Student Clubs</p>
+                                        </div>
+                                    </div>
+                                    <!--  Slide 5-->
+                                    <div class="carousel-item">
+                                        <img class="img-fluid" src="images/events/4.JPG" alt="">
+                                        <div class="carousel-caption">
+                                            <p>Developer Student Clubs</p>
+                                        </div>
+                                    </div>
+                                    <!--  Slide 6-->
+                                    <div class="carousel-item">
+                                        <img class="img-fluid" src="images/events/5.JPG" alt="">
+                                        <div class="carousel-caption">
+                                            <p>Developer Student Clubs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container  p-5">
+                            <div id="slider" class="carousel slide fill" data-ride="carousel"> <!-- Indicator -->
+                                <div class="carousel-inner" role="breakdown"> <!-- Wrapper for slides-->
+                                    <h4 class="p-2">FAQ</h4>
+                                    <div class="card dsc-light-bg p-3 carousel-item active">
+                                        <p>Do I have to be a CS/CIS/SE major in order to be a member and attend DSC events ? </p>
+                                        <p class="font-weight-bold">N <span><i class="far fa-smile-wink"></i></span></p>
+                                    </div>
+                                    <div class="card dsc-light-bg p-3 carousel-item">
+                                        <p>Do I need to pay a membership fee ? <span>
+                                        <p class="font-weight-bold">N <span><i class="far fa-smile-wink"></i></span></p>
+                                    </div>
+                                    <div class="card dsc-light-bg p-3 carousel-item">
+                                        <p>What if i am not avilable during an event ?</p>
+                                        <p class="font-weight-bold">Do not worry, we record all of our events for you. <span><i class="far fa-smile-wink"></i></span></p>
+                                    </div>
+                                    <div class="card dsc-light-bg p-3 carousel-item">
+                                        <p>Will there be any in-person events this semester ?</p>
+                                        <p class="font-weight-bold">N <span><i class="far fa-frown"></i></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> <!-- End of Right Side-->
+        </div>
+    </div>
+
+    <div id="about" class="lead container">
+        <div class="container mt-5 pt-5">
+            <p class="h2 text-center">About DSC</p>
+        </div>
+        <div class="about-paragraph text-center p-3">
+            <p class="lead">
+            Developer Student Clubs are university based community groups
+            for students interested in Google developer technologies. Students from all undergraduate or
+            graduate programs with an interest in growing as a developer are welcome. By joining a DSC,
+            students grow their knowledge in a peer-to-peer learning environment and build solutions for
+            local businesses and their community. <span><a href="https://developers.google.com/community/dsc/">More</a></span>
+            </p>
+        </div>
+        <div class="p-5 text-center card">
+            <p class="text-center h5 pb-3" >Domains</p>
+            <div class="row text-light mb-5">
+                <div class="col-sm button">
+                    <p class="h3 domain-item google-blue-bg p-5">Technical</p>
+                </div>
+                <div class="col-sm">
+                    <p class="h3 domain-item google-red-bg p-5">Business</p>
+                </div>
+            </div>
+            <div class="row text-light">
+                <div class="col-sm">
+                    <p class="h3 domain-item google-green-bg p-5">Public Relations</p>
+                </div>
+                <div class="col-sm">
+                    <p class="h3 domain-item google-yellow-bg p-5">Creatives and Photography</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+    <%- include('./partials/bootsrapJS.ejs') %>
 </body>
+    
 </html>

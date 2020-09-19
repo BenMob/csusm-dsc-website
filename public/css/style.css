@@ -1,0 +1,167 @@
+/*=== Unifrom accross all pages ==*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.navbar{
+    background-color: #f4f4f4;
+}
+
+/*
+.nav-item{
+    font-weight: bolder; 
+} */
+
+.cross{
+    color: red;
+    font-size: large;
+}
+
+.dropdown-menu{
+    margin-left: 38%;
+}
+
+.page-footer {
+    font-size: smaller !important;
+    width: 100%;
+}
+
+.media-icon{
+    font-size: 25px;
+    color: black; 
+}
+
+.media-icon:hover{
+    color: gray;
+}
+
+/*==================================== Home Page =============================================*/
+.home-content{
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    border-radius: 0px !important;
+}
+
+.intro{
+    margin-top: 10%;
+}
+
+.hashtag{
+    font-size: 14px;
+}
+
+.fill {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+/*===== About =======*/
+#about{
+    height: 80vh;
+}
+
+.domain-item{
+    border-radius: 50px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    #about{
+        margin-top: 90vh;
+        height: 200vh;
+        background-color: #f4f4f4;
+    }
+
+
+    .dropdown-menu{
+        margin-left: 0px;
+    }
+}
+
+/* ================================= Core Team Page ===================================== */
+.profile-img-wrapper{
+    text-align: center;
+    display: block;
+}
+
+.profile-img{
+    width: 125px;
+    border-radius: 50%;
+}
+
+.team-lead-name{
+    font-weight: bolder;
+}
+.team-lead-text {
+    color: #FF69B4;
+}
+
+
+
+.faculty-advisor-text {
+    color: #9D69A3;
+}
+
+.graphic-design-lead-text {
+    color: #0F9D58;
+}
+
+.business-lead-text {
+    color: #4285F4;
+}
+
+.event-planning-lead {
+    color: #F4B400;
+}
+
+.development-lead-text{
+    color: #FF8C00;
+}
+
+.technical-lead-text {
+    color: #DB4437;
+}
+
+.team-member-text {
+    color: #6c757D;
+}
+
+.social-icons {
+    font-size: 20px !important;
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+}
+
+.card-action a {
+    margin-right: 0 !important;
+}
+
+#portfolio {
+    color: #000000;
+}
+
+#linkedin {
+    color: #0077B5;
+}
+
+#github {
+    color: #000000;
+}
+
+#instagram {
+    color: #BC2A8D;
+}
+
+#twitter {
+    color: #1DA1F2;
+}

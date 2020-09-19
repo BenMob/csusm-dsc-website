@@ -7,6 +7,7 @@ const morgan = require('morgan')
 const homeRoutes = require('./routes/homeRoutes')
 const eventRoutes = require('./routes/eventRoutes')
 const teamRoutes = require('./routes/teamRoutes')
+const contactRoutes = require('./routes/contactRoutes')
 const app = express()
 
 // Creates the server
@@ -29,6 +30,7 @@ class Server {
         app.use('/', homeRoutes)
         app.use('/events', eventRoutes)
         app.use('/team', teamRoutes)
+        app.use('/contact', contactRoutes)
     }
 }
 

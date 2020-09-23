@@ -17,10 +17,7 @@ body{
     font-weight: bolder; 
 } */
 
-.cross{
-    color: red;
-    font-size: large;
-}
+
 
 .dropdown-menu{
     margin-left: 38%;
@@ -38,6 +35,10 @@ body{
 
 .media-icon:hover{
     color: gray;
+}
+
+.section-start{
+    padding-top: 15vh;
 }
 
 /*==================================== Home Page =============================================*/
@@ -66,7 +67,7 @@ body{
 
 /*===== About =======*/
 #about{
-    height: 80vh;
+    height: 100vh;
 }
 
 .domain-item{
@@ -136,15 +137,12 @@ body{
     color: #6c757D;
 }
 
-.social-icons {
-    font-size: 20px !important;
+.media-icon {
+    font-size: 25px !important;
     margin-left: 6px !important;
     margin-right: 6px !important;
 }
 
-.card-action a {
-    margin-right: 0 !important;
-}
 
 #portfolio {
     color: #000000;

@@ -4,6 +4,7 @@
 
 const express = require('express')
 const morgan = require('morgan')
+const normalizePort = require('normalize-port')
 const homeRoutes = require('./routes/homeRoutes')
 const eventRoutes = require('./routes/eventRoutes')
 const teamRoutes = require('./routes/teamRoutes')
@@ -19,9 +20,11 @@ class Server {
 
     // Initializes port and middlewares
     initMiddlewares(){
-        app.listen(3000, () => console.log('Application started on port 3000'))
+        const port = normalizePort(process.env.PORT || '3000')  // Normilizes port based on the environment
+        app.listen(port, () => console.log('Application started'))
+        app.set('views', __dirname + '/views')
         app.set('view engine', 'ejs')
-        app.use(express.static('../public'))
+        app.use(express.static('public')) // Change this to "app.use(express.static('../public'))" to run locally
         app.use(express.urlencoded({extended: true}))
         app.use(morgan('dev'))
     }
